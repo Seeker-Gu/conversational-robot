@@ -1,0 +1,161 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - 你好
+    - 你好啊
+    - 嗨
+    - 哈喽
+    - 早
+    - 哈喽哈喽
+    - 喂喂
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - 再见
+    - 拜拜
+    -下次见
+    - 有空聊
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - 是的
+    - 好的
+    - 嗯
+    - 嗯嗯
+    - 嗯呢
+    - 可以
+    - 可
+    - 对
+    - 对的
+    - 好滴
+    - 行
+    - 还行
+    - 当然可以
+    - 是这样的
+    - 当然
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - 不
+    - 不可以
+    - 不是的
+    - 不行
+    - 不好
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+-intent: whoareyou
+  examples: |
+    - 你是？
+    - 你是谁？
+    - 你叫什么名字？
+    - 可以告诉我你的名字吗？
+    - 谁？
+    - 你是哪位？
+
+-intent: whattodo
+  examples: |
+    - 你可以做什么呢？
+    - 你是干什么的啊？
+    - 你会什么？
+    - 你有什么功能？
+    - 你可以帮我做点什么？
+    - 你能干啥？
+
+-intent: thanks
+  examples: |
+    - 谢谢
+    - thanks
+    - thank you
+    - 太感谢你了
+    - 谢了
+    - 非常感谢
+
+-intent: request_weather
+  examples: |
+    - 天气
+    - 帮我查下天气
+
+  -intent: inform
+    examples: |
+      - 我的电子邮箱是123456@gmail.com
+      - 电子邮箱是123456@gmail.com
+

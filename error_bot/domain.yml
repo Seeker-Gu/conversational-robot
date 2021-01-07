@@ -1,0 +1,68 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- thanks
+- whoareyou
+- whattodo
+- request_weather
+- inform
+
+# slots:
+#   data-time:
+#     type: unfeaturized
+#   address:
+#     type:unfeaturized
+  
+entities:
+  - data-time
+  - address
+
+responses:
+  utter_greet:
+  - text: "您好！ 有什么可以帮助您的吗?"
+  - text:  "您好！ 很高心为您服务。需要我做点什么？"
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_affirm:
+  - text: "很开心能为您服务~.~"
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: "再见"
+  - text: "拜拜"
+  - text: "下次见!"
+  - text:  "嗯嗯，记得有麻烦来找我呦~.~"
+  utter_whoareyou:
+  - text: "我是您亲爱的助手啊^^"
+  - text: "Duang！ 您的助手前来报道"
+  utter_deny:
+  - text: "我一直都在哦。有什么能帮你的吗?"
+  utter_thanks:
+  - text: "这都是我应该做的，不用客气~"
+  - text: "哈哈，那给我五星好评哦？我也要恰饭的"
+  utter_whattodo:
+  - text: "您好呀！我现在只学会了掌控天气预测哦～"
+  # utter_date-time:
+  # - text: "请问您要查询那一天的天气？"
+  # utter_address:
+  # - text: "请问您要查询哪里的天气？"
+  utter_default:
+  - text: "您慢点说，我还小呢～"
+  utter_inform:
+  - text: "确认您的邮箱地址"
+  utter_request_weather:
+  - text: "天气信息已经发往您的邮箱，请查收^^"
+
+# forms:
+#   email_form:
+#     email:
+#     - type: from_text
